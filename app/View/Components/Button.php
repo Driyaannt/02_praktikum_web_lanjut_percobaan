@@ -11,9 +11,9 @@ class Button extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($title)
     {
-        //
+        $this->title = $title;
     }
 
     /**
@@ -23,6 +23,9 @@ class Button extends Component
      */
     public function render()
     {
-        return view('components.button');
+//        return view('components.button');
+        return view('components.button', [
+            'title' => $this->title,
+        ]);
     }
 }

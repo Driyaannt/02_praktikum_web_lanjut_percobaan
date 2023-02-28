@@ -30,5 +30,21 @@ use Illuminate\Support\Facades\View;
 //    return view('blog.hello', ['name' => 'Andi']);
 //});
 
-Route::get('/hello', [WelcomeController::class, 'hello']);
+//Route::get('/hello', [WelcomeController::class, 'hello']);
 
+Route::get('/app', function (){
+    return view('layouts.app');
+});
+
+Route::get('/alert', function (){
+    return view('components.alert', ['slot' => 'Berhasil']);
+});
+
+Route::get('/btn', function (){
+    return view('components.button');
+});
+
+
+Route::get('/child', function (){
+    return view('child');
+});

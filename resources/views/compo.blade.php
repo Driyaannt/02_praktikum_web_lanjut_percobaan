@@ -1,9 +1,10 @@
-@php
-use App\View\Components\Button;
-@endphp
 
+<!--use App\View\Components\Button;-->
+<!---->
+<!--<html>-->
+<!--<x-button class="btn btn-primary" title="Click Me">Ini Button Berhasil</x-button>   -->
+<!--</html>-->
 
-<x-button class="btn btn-primary" title="Click Me">Ini Button Berhasil</x-button>
-
+wleee
 
 
