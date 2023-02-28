@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
-Use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\View;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +20,15 @@ Use Illuminate\Support\Facades\View;
 // });
 
 
-Route::get('/hello', function () {
-    return view('hello', ['name' => 'Andi']);
-    });
+//Route::get('/hello', function () {
+//    return view('hello', ['name' => 'Driya']);
+//    });
+//
+//return View::make('hello', ['name' => 'Ananta']);
 
-return View::make('hello', ['name' => 'Andi']);
+//Route::get('/hello', function () {
+//    return view('blog.hello', ['name' => 'Andi']);
+//});
+
+Route::get('/hello', [WelcomeController::class, 'hello']);
+
